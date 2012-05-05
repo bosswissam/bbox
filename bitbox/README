@@ -1,0 +1,53 @@
+Dependencies:
+
+    bitbox requires python3, python3-dev, libpbc, and pypbc (Python bindings for
+    libpbc) to run. python3 and the development headers are easily installed on
+    Debian-based systems using aptitude:
+
+        $ sudo apt-get install python3 python3-dev
+
+    If all else fails, the Python source can be found at:
+
+        http://www.python.org/
+
+    The pbc project is hosted by the Applied Crypto Group at Stanford:
+
+        http://crypto.stanford.edu/pbc/
+        
+    PyPBC provides Python bindings for libpbc. It is hosted on Gitorious:
+    
+        http://gitorious.org/pypbc/
+
+Installation:
+
+    You will need to install libpbc and pypbc before bitbox can run. They are
+    included here for your convenience.
+
+        $ sudo make install
+
+    If you want to install libpbc to a directory other than /usr/lib, run
+    configure with a different prefix before installing.
+    
+        $ cd pbc-0.5.11 && ./configure --prefix=DIR_OF_YOUR_CHOICE
+
+Usage:
+
+    Encrypt three files for Alice and Bob.
+
+    $ bitbox encrypt --files file1 file2 file3 --tokens alice bob
+
+Copyright:
+
+    bitbox and pypbc are licensed under the GPL. libpbc is licensed under LPGL.
+    Please see src/COPYING for a copy of the GPLv3.
+
+Contact:
+
+    If you have questions, comments, or criticisms, you can reach the bitbox
+    maintainers by email:
+
+        bbox@mit.edu
+
+    Detailed examples, documentation, and math are available on our website:
+
+        http://bitbox.mit.edu/

@@ -1,0 +1,21 @@
+# encrypt files
+bitbox e file1 file2 ... --output dir [--tokens [me]] [--context [CURRENT]] 
+       
+# decrypt files
+bitbox d file 1 file2 ... --output dir [--tokens [me]] [--context [CURRENT]]
+
+# setup/switch context
+bitbox s name [--max-users [1000]] [--prime-strength [256]]
+
+# acl a file (decrypts, then encrypts)
+bitbox a file1 file2 ... --output [.] [--tokens [me]] [--context [CURRENT]]
+
+# import token
+bitbox i token1 token2 ... [--context [NEW]]
+
+# xport token
+bitbox x token1 token2 ... [--context [CURRENT]]
+
+# generate token
+bitbox g token1 token2 ... [--context [CURRENT]]
+       
